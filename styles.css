@@ -53,8 +53,8 @@ header {
   transition: all 0.5s;
 }
 header.sticky {
-  background-color: var(--soft-pink);
-  border-bottom: 1px solid var(--blue);
+  background-color: var(--magic);
+  border-bottom: 1px solid var(--yellow);
   padding: 1rem 0;
 }
 
