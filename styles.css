@@ -81,7 +81,7 @@ nav {
   margin: 0 1.5rem;
 }
 
-.nav-list li a {
+li a {
   color: var(--soft-pink);
   font-size: 1.6rem;
   text-decoration: none;
@@ -124,4 +124,24 @@ h2 {
 
 .flex > * {
   margin: 3px;
+}
+
+/* ACTIVE CLASS */
+
+.active {
+  position: relative;
+}
+
+.active > * {
+  color: var(--yellow);
+}
+
+.active::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--blue);
 }
