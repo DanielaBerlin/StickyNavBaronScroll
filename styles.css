@@ -145,3 +145,25 @@ h2 {
   width: 100%;
   background-color: var(--blue);
 }
+
+/* SCROLL TO TOP */
+.top {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background-color: transparent;
+  padding: 1rem;
+  border: 1px solid var(--magic);
+  outline: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 111;
+  transform: translateY(10rem);
+  transition: all .3s;
+  opacity: 0;
+}
+
+.show-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
