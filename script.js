@@ -10,6 +10,7 @@ function smoothScroll(e) {
   document.querySelector(href).scrollIntoView({
     behavior: 'smooth',
   });
+  hideMenu();
 }
 
 //Sticky Header
@@ -53,3 +54,26 @@ function scrollToTop() {
     behavior: "smooth"
   })
 }
+
+// RESPONSIVE MOBILE MENU
+
+const menu = document.querySelector(".nav-list");
+const hamburger = document.querySelector(".hamburger");
+const close = document.querySelector(".close");
+
+const showMenu = () => {
+  hamburger.style.display = "none";
+  close.style.transform = "translateY(0)";
+  menu.style.transform = "translateY(0)";
+};
+
+const hideMenu = () => {
+  close.style.transform = "translateY(-20rem)";
+  hamburger.style.display = "block";
+  menu.style.transform = "translateY(-200%)";
+}
+
+hamburger.addEventListener("click", showMenu);
+close.addEventListener("click", hideMenu);
+
+
