@@ -1,6 +1,6 @@
 const links = document.querySelectorAll('.nav-list li a');
 
-for (const link of links) {
+for (link of links) {
   link.addEventListener('click', smoothScroll);
 }
 
